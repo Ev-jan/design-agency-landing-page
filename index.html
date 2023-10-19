@@ -1,509 +1,1002 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Design agency landing page">
-    <title>Design agency landing</title>
-    <link href="./css/normalize.css" rel="stylesheet" type="text/css">
-    <link href="./css/style-prefixed.css" rel="stylesheet" type="text/css">
-    <title>Document</title>
-</head>
-<body class="page o-text-overall">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Design agency landing page" />
+    <title>Remodelling and Desing</title>
+    <link href="./css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="./css/style-prefixed.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body class="page o-text-overall">
     <header class="header">
-        <div class="header__container">
-            <div class="logo" role="presentation">IC "Repair Design Project"</div>
-            <nav>
-                <ul class="header-nav">
-                    <li class="header-nav__item"><a href="#completed-projects" class="link">HOME</a></li>
-                    <li class="header-nav__item"><a href="#completed-projects" class="link">PROJECTS</a></li>
-                    <li class="header-nav__item"><a href="#request-measurement" class="link">MEASUREMENT</a></li>
-                    <li class="header-nav__item"><a href="#completed-projects" class="link">TEAM</a></li>
-                    <li class="header-nav__item"><a href="#completed-projects" class="link">REVIEWS</a></li>
-                    <li class="header-nav__item"><a href="#completed-projects" class="link">CONTACTS</a></li>
-                </ul>
-            </nav>
-            <a href="tel:+79287683239" class="contact-group__phone">+7 (928) 768-32-39</a>
-            <button class="button contact-group__button" onclick="window.location.href='#request-measurement'">REQUEST A CALL</button>
+      <div class="header__container">
+        <div class="logo" role="presentation">Remodelling and Desing</div>
+        <nav class="header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a href="" class="link">HOME</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#completed-projects" class="link">PROJECTS</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#request-measurement" class="link">MEASUREMENT</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#reviews" class="link">TEAM</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#reviews" class="link">REVIEWS</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#contacts" class="link">CONTACTS</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__right-side-wrapper">
+          <a href="tel:+1(928)374-65-00" class="contact-group__phone"
+            >+1 (928) 374-65-00</a
+          >
+          <button
+            class="button contact-group__button"
+            onclick="window.location.href='#request-measurement'"
+          >
+            SCHEDULE A CALL
+          </button>
         </div>
+      </div>
     </header>
     <main>
-        <section class="head-group">
-            <div class="head-group__container container">
-                <h1 class="title head-group__title">
-                    <span class="head-group__title-white">Turnkey Repair in the city of</span> Rostov-on-Don
-                </h1>
-                <p class="head-group__tagline">
-                    Get ready-made turnkey repairs on time with work 
-                    time saving up to 45 days and 20% from 
-                    cost of materials due to the organization of work
-                </p>
-                <button class="button head-group__button" type="submit">
-                    calculate cost
-                </button>
-                <button class="button head-group__button head-group__button-transparent" type="submit">
-                    <span class="none">submit your</span>&nbsp application
-                </button>
-            </div>
-            <div class="head-group__overlay"></div>
-        </section>
-        <section class="completed-projects" id="completed-projects">
-            <div class="completed-projects__container">
-                <h2 class="title completed-projects__title">Completed projects</h2>
-                <p class="completed-projects__text">
-                    Only a small part of the work performed by our company is presented 
-                    on the site. For 14 years on in the construction market we have made 
-                    happy more than 1000 families
-                </p>
-                <div class="info-block-1">
-                    <p class="title info-block__title">City:</p>
-                    <p class="o-text-overall info-block__text">Rostov-on-Don LCD admiral</p>
-                </div>                <div class="info-block-1">
-                    <p class="title info-block__title">apartment area:</p>
-                    <p class="o-text-overall info-block__text">81 m<sup>2</sup></p>
-                </div>                <div class="info-block-2">
-                    <p class="title info-block__title">Repair time:</p>
-                    <p class="o-text-overall info-block__text">3.5 months</p>
-                </div>                <div class="info-block-2">
-                    <p class="title info-block__title">Repair Cost:</p>
-                    <p class="o-text-overall info-block__text">Upon request</p>
-                </div>
-                <div class="slideshow-controls">
-                    <div>
-                        <a class="prev" onclick="plusSlides(-1)"><img src="./images-interface/arrow-left.svg" alt="click for previous picture"></a>
-                    </div>
-                    <div class="dot-wrapper">
-                        <div class="dot-indicator" onclick="currentSlide(1)"></div>
-                        <div class="dot-indicator" onclick="currentSlide(2)"></div>
-                        <div class="dot-indicator" onclick="currentSlide(3)"></div>
-                    </div>
-                    <div>
-                        <a class="next" onclick="plusSlides(1)"><img src="./images-interface/arrow-right.svg" alt="click for next picture"></a>
-                    </div>
-                </div>
-                <ul class="slideshow-captions">
-                    <li><a class="link title caption-text" onclick="currentSlide(1)">Rostov-on-Don, Admiral</a></li>
-                    <li><a class="link title caption-text" onclick="currentSlide(2)">Sochi Thieves</a></li>
-                    <li><a class="link title caption-text" onclick="currentSlide(3)">Rostov-on-Don Patriotic</a></li>
-                </ul>
-                <div class="slideshow-container">
-                    <div class="slide">
-                        <a class="prev prev_mob" onclick="plusSlides(-1)"><img src="./images-interface/slideshow-prev.png" alt="click for previous picture"></a>
-                        <a class="next next_mob" onclick="plusSlides(1)"><img src="./images-interface/slideshow-next.png" alt="click for next picture"></a>
-                        <img class="slideshow-image_1 fade" src="./images-content/design-picture-1.png" alt="living room interior, two chairs and journal table between them">
-                        <img class="slideshow-image_1_mob fade" src="./images-content/design-picture-1-mob.png" alt="stylish bedroom interior">
-                    </div>
-                    <div class="slide">
-                        <a class="prev prev_mob" onclick="plusSlides(-1)"><img src="./images-interface/slideshow-prev.png" alt="click for previous picture"></a>
-                        <a class="next next_mob" onclick="plusSlides(1)"><img src="./images-interface/slideshow-next.png" alt="click for next picture"></a>
-                        <img class="slideshow-image_2 fade" src="./images-content/design-picture-2.png" alt="stylish bedroom interior">
-                        <img class="slideshow-image_1_mob fade" src="./images-content/design-picture-1.png" alt="stylish bedroom interior">
-                    </div>
-                    <div class="slide">
-                        <a class="prev prev_mob" onclick="plusSlides(-1)"><img src="./images-interface/slideshow-prev.png" alt="click for previous picture"></a>
-                        <a class="next next_mob" onclick="plusSlides(1)"><img src="./images-interface/slideshow-next.png" alt="click for next picture"></a>
-                        <img class="slideshow-image_3 fade" src="./images-content/design-picture-3.png" alt="living room interior">
-                        <img class="slideshow-image_1_mob fade" src="./images-content/design-picture-2.png" alt="stylish bedroom interior">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="surveillance-section">
-            <div class="surveillance-section__heading-group">
-                <h3 class="heading-3 heading-3_theme-white">ONLINE CONTROL</p>
-                <div class="img-wrapper">
-                    <img src="./images-content/img-skewer.png" alt="line" aria-hidden="true">
-                    <img class="img-CCTV" src="./images-content/online-control-camera.png" role="presentation" alt="logo of CCTV camera">
-                    <img src="./images-content/img-skewer.png" alt="line" aria-hidden="true">
-                </div>
-            </div>
-            <div class="video-player">
-                <video src="./images-content/video.mov" poster="./images-content/video-poster.png" class="video" alt="empty spacious well-illuminated room with big windows"></video>
-                <div class="video-overlay"></div>
-                <button class="play-button" type="controls">
-                        <img class="play-button__icon" src="./images-interface/video-button-polygon.svg" alt="play">
-                </button>
-            </div>
-            <hr class="h-rule" aria-hidden="true">
-            <p class="surveillance-section__text">
-                At each facility, a camera is installed that broadcasts the progress 
-                of work on the clock. At any time, you can go to our website and monitor 
-                the progress of work in your apartment. You can watch the live broadcast from one 
-                of our facilities!
-                Leave a request below and you will receive a link to the broadcast.
+      <section class="head-group">
+        <div class="head-group__container container">
+          <h1 class="title head-group__title">
+            <span class="head-group__title-white"
+              >Comprehensive Remodelling in</span
+            >
+            Knoxville, TN
+          </h1>
+          <p class="head-group__tagline">
+            Enjoy a seamless turnkey renovation experience, saving up to 45 days
+            and 20% on material costs with our efficient process
+          </p>
+          <button class="button head-group__button" type="submit">
+            Get a Free Estimate
+          </button>
+          <button
+            class="button head-group__button head-group__button-transparent"
+            type="submit"
+          >
+            <span class="none">place</span>&nbsp order
+          </button>
+        </div>
+        <div class="head-group__overlay"></div>
+      </section>
+      <section class="completed-projects" id="completed-projects">
+        <div class="completed-projects__container">
+          <h2 class="title completed-projects__title">Completed projects</h2>
+          <p class="completed-projects__text">
+            Our website showcases only a fraction of our extensive portfolio.
+            With over 14 years in the industry, we've delighted more than 1000
+            homeowners.
+          </p>
+          <div class="info-block-1">
+            <p class="title info-block__title">City:</p>
+            <p class="o-text-overall info-block__text">Knoxville, TN</p>
+          </div>
+          <div class="info-block-1">
+            <p class="title info-block__title">Floor area:</p>
+            <p id="app-area" class="o-text-overall info-block__text">
+              81 sq ft
             </p>
-            <form class="request-form" action=" ">
-                <fieldset class="input-group">
-                    <label class="label request-form__label_1 label_text" for="fname">Name
-                        <input class="input request-form__input" type="text" placeholder="Enter your name:">
-                        <div class="input__line"></div>
-                    </label>
-                    <label class="label request-form__label_2 label_text" for="phone">Phone
-                        <input class="input request-form__input" type="text" placeholder="Enter your phone number:">
-                        <div class="input__line"></div>
-                    </label>
-                    <button class="button form-button form-button_1">
-                        submit
-                    </button>
-                    <div class="check check_1">
-                        <label class="check__label label_theme-white">
-                            <input class="check__input" type="checkbox">
-                            <span class="check__box"></span>
-                            <span class="check__label">I agree to the processing of personal data</span>
-                        </label>
-                    </div>
-                </fieldset>
-            </form>
-        </section>
-       <section class="repair-section">
-            <div class="repair-section__bgr-container"></div>
-            <div class="repair-section__container">
-                <h3 class="heading-3 repair-section__heading">types of repair</h3>
-                <div class="img-wrapper">
-                    <img src="./images-content/img-skewer.png" alt="line" aria-hidden="true">
-                    <img class="img-repair-section" src="./images-content/img-repair-types.svg" role="presentation" alt="logo of hammer being crossed over wrench">
-                    <img src="./images-content/img-skewer.png" alt="line" aria-hidden="true">
-                </div>
-                <div class="card-container repair-section__card-container">
-                    <div class="repair-section__card">
-                        <img class="card__pic" src="./images-content/card-pic-1.png" alt="empty freshly renovated living room">
-                        <div class="list-container">
-                            <h4 class="card__heading">Redecoration</h4>
-                            <ul class="card__list">
-                                <li class="card__item">Dismantling of old coatings</li>
-                                <li class="card__item">Wallpapering</li>
-                                <li class="card__item">Painting walls and ceiling</li>
-                                <li class="card__item">Laying flooring</li>
-                                <li class="card__item">Replacing plumbing</li>
-                                <li class="card__item">Replacing sockets and switches</li>
-                                <li class="card__item">Replacing doors</li>
-                            </ul>
-                            <div class="button card-summary_repair" >from 900 rub/m<sup>2</sup></div>
-                        </div>
-                    </div>
-                    <div class="card repair-section__card">
-                        <img class="card__pic" src="./images-content/card-pic-2.png" alt="living room with a modern design interior">
-                        <div class="list-container">
-                            <h4 class="card__heading">Overhaul</h4>
-                            <ul class="card__list">
-                                <li class="card__item">Dismantling of old coatings</li>
-                                <li class="card__item">Wallpapering</li>
-                                <li class="card__item">Painting walls and ceilings</li>
-                                <li class="card__item">Laying flooring</li>
-                                <li class="card__item">Replacing plumbing</li>
-                                <li class="card__item">Replacing sockets and switches</li>
-                                <li class="card__item">Replacing doors</li>
-                            </ul>
-                            <button class="button card-summary_repair" >from 900 rub/m<sup>2</sup></button>
-                        </div>
-                    </div>
-                    <div class="card repair-section__card">
-                        <img class="card__pic" src="./images-content/card-pic-3.png" alt="ikea styl living room interior">
-                        <div class="list-container">
-                            <h4 class="card__heading">Designer repair</h4>
-                            <ul class="card__list">
-                                <li class="card__item">Dismantling of old coatings</li>
-                                <li class="card__item">Wallpapering</li>
-                                <li class="card__item">Painting walls and ceilings</li>
-                                <li class="card__item">Laying flooring</li>
-                                <li class="card__item">Replacing plumbing</li>
-                                <li class="card__item">Replacing sockets and switches</li>
-                                <li class="card__item">Replacing doors</li>
-                            </ul>
-                            <button class="button card-summary_repair">from 900 rub/m<sup>2</sup></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="repair-subsection">
-                    <div class="repair-subsection__container">
-                        <div class="benefits">
-                        <div class="benefit__item">
-                            <div class="item-nr">01</div>
-                            <p>Our specialist will arrive for measurements per day 
-                                contact, or appoint a date convenient for you</p>
-                        </div>
-                        <div class="benefit__item">
-                            <div class="item-nr">02</div>
-                            <p>Free metering</p>
-                        </div>
-                        <div class="benefit__item">
-                            <div class="item-nr">03</div>
-                            <p>Free consultation</p>
-                        </div>
-                        <div class="benefit__item">
-                            <div class="item-nr">04</div>
-                            <p>Get a cost estimate and <br>
-                                the timing of your future repairs</p>
-                        </div>
-                </div>
-                <div class="form-wrapper">
-                    <form class="request-form repair-subsection__form" action=" " id="request-measurement">
-                        <label class="form-label" for="repair-subsection__form">Leave a request for free <br>
-                            departure of the measurer</label>
-                            <div class="input-wrapper">
-                                <label class="label repair-subsection__label label_theme-black" for="fname">Name
-                                    <input class="input repair-subsection__input input_theme-black" type="text" placeholder="Enter your name:">
-                                </label>
-                                <div class="input__line_feedback"></div>
-                            </div>
-                            <div class="input-wrapper">
-                                <label class="label repair-subsection__label label_theme-black" for="phone">Phone
-                                    <input class="input repair-subsection__input input_theme-black" type="text" placeholder="Enter your phone number:">
-                                </label>
-                                <div class="input__line_feedback"></div>
-                            </div>
-                            <div class="input-wrapper">
-                                <label class="label repair-subsection__label label_theme-black" for="e-mail">E-mail
-                                    <input class="input repair-subsection__input input_theme-black" type="text" placeholder="Enter your e-mail:">
-                                </label>
-                                <div class="input__line_feedback"></div>
-                            </div>
-                            <div class="check_2">
-                                <label class="check__label">
-                                    <input class="check__input" type="checkbox">
-                                    <span class="check__box"></span>
-                                    <span class="check__label  check__label_theme-black">I agree to the processing of personal data</span>
-                                </label>
-                            </div>
-                        <button class="button form-button form-button_2">
-                            call the measurer
-                        </button>
-                    </form>
-                    <div class="cost-saver">
-                        <div class="cost-saver__bgr"></div>
-                        <p class="cost-saver__text">Help save 10 - 20% of the 
-                        cost of materials</p>
-                    </div>
-                </div>
+          </div>
+          <div class="info-block-2">
+            <p class="title info-block__title">Repair time:</p>
+            <p id="repair-time" class="o-text-overall info-block__text">
+              3.5 months
+            </p>
+          </div>
+          <div class="info-block-2">
+            <p class="title info-block__title">Cost:</p>
+            <p class="o-text-overall info-block__text">On request</p>
+          </div>
+          <div class="slideshow-controls">
+            <div>
+              <button class="prev" onclick="slider1.prev()"
+                ><img
+                  src="./images-interface/arrow-left.svg"
+                  alt=" previous slide"
+              /></button>
             </div>
-                </div>
-        </section>
-        <section class="style-section">
-            <div class="style-section__overlay"></div>
-            <div class="style-section__container">
-                <h3 class="title style-section__heading">we realize your wildest fantasies</h3>
-                <div class="list-wrapper">
-                    <ul class="style-list">
-                        <li class="style-list__item"><a class="style-list__link" href="#completed-projects">American classic</a></li>
-                        <li class="style-list__item"><a class="style-list__link" href="#completed-projects">Empire</a></li>
-                        <li class="style-list__item"><a class="style-list__link" href="#completed-projects">Loft</a></li>
-                        <li class="style-list__item"><a class="style-list__link" href="#completed-projects">Classical</a></li>
-                        <li class="style-list__item"><a class="style-list__link" href="#completed-projects">Minimalism</a></li>
-                        <li class="style-list__item"><a class="style-list__link" href="#completed-projects">Provence</a></li>
-                        <li class="style-list__item"><a class="style-list__link" href="#completed-projects">Romanticism</a></li>
-                        <li class="style-list__item"><a class="style-list__link" href="#completed-projects">Scandinavian style</a></li>
-                        <li class="style-list__item"><a class="style-list__link" href="#completed-projects">Mediterranean style</a></li>
-                        <li class="style-list__item"><a class="style-list__link" href="#completed-projects">High tech</a></li>
-                        <li class="style-list__item"><a class="style-list__link" href="#completed-projects">Eclecticism</a></li>
-                    </ul>
-                </div>
-                <div class="masonry">
-                    <div class="empty"></div>
-                    <img src="./images-content/masonry-1.png" alt="opulent living room interior with antique grandfather clock">
-                    <img src="./images-content/masonry-2.png" alt="opulent living room interior with a plasma TV">
-                    <img src="./images-content/masonry-3.png" alt="opulent living room interior with sofa">
-                    <img src="./images-content/masonry-4.png" alt="opulent living room interior with magazine table">
-                </div>
-                <div class="slideshow-container slideshow-container_mob">
-                    <div class="slide_2">
-                        <a class="prev prev_mob" onclick="plusSlidesSecond(-1)"><img src="./images-interface/slideshow-prev.png" alt="click for previous picture"></a>
-                        <a class="next next_mob" onclick="plusSlidesSecond(1)"><img src="./images-interface/slideshow-next.png" alt="click for next picture"></a>
-                        <img class="slideshow-image_1_mob fade" src="./images-content/style-sect-bgr.png" alt="bedroom interior">
-                    </div>
-                    <div class="slide_2">
-                        <a class="prev prev_mob" onclick="plusSlidesSecond(-1)"><img src="./images-interface/slideshow-prev.png" alt="click for previous picture"></a>
-                        <a class="next next_mob" onclick="plusSlidesSecond(1)"><img src="./images-interface/slideshow-next.png" alt="click for next picture"></a>
-                        <img class="slideshow-image_1_mob fade" src="./images-content/masonry-2.png" alt="bedroom interior">
-                    </div>
-                    <div class="slide_2">
-                        <a class="prev prev_mob" onclick="plusSlidesSecond(-1)"><img src="./images-interface/slideshow-prev.png" alt="click for previous picture"></a>
-                        <a class="next next_mob" onclick="plusSlidesSecond(1)"><img src="./images-interface/slideshow-next.png" alt="click for next picture"></a>
-                        <img class="slideshow-image_1_mob fade" src="./images-content/masonry-3.png" alt="bedroom interior">
-                    </div>
-                </div>
+            <div class="dot-wrapper">
+              <button
+                class="dot-indicator dot-indicator_active"
+                onclick="current(0)"
+              ></button>
+              <button class="dot-indicator" onclick="slider1.current(1)"></button>
+              <button class="dot-indicator" onclick="slider1.current(2)"></button>
             </div>
-        </section>
-        <section class="client-section">
-            <div class="client-section__container">
-                <div class="client-section__heading-group">
-                    <h3 class="heading-3 client-section__heading">our clients</h3>
-                    <div class="img-wrapper">
-                        <img src="./images-content/img-skewer.png" alt="line" aria-hidden="true">
-                        <img src="./images-content/client-section-img.png" class="img-repair-section" role="presentation" alt=" logo of CCTV camera">
-                        <img src="./images-content/img-skewer.png" alt="line" aria-hidden="true">
-                    </div>
-                    <p class="client-section__tagline">80% of our customers recommend us to their friends and family</p>
-                </div>
-                <div class="client-section__card-container">
-                    <div class="single-card-wrapper">
-                        <div class="card client-section__card">
-                            <div class="card-header">
-                                <img class="card-header__pic" src="./images-content/client-img-1.png" alt="happy middle-aged woman">
-                                <h4 class="card-header__heading">Fedosova Maria Konstantinovna</h4>
-                            </div>
-                            <p class="card-text">I want to thank the guys for their work. 
-                                We put your shower part in repair. 
-                                I am very grateful that I referred to 
-                                the repair as to my own. Great thanks 
-                                I express the project to Georgia for its 
-                                professionalism and approach.</p>
-                            <p class="card-text"> The repair 
-                                process was turned out in terms, faster 
-                                than anticipated. Team mobile and professional. 
-                                Works performed qualitatively without comments. 
-                                Quality satisfied. Prices democratic. 
-                                I recommend these masters.</p>
-                        </div>
-                        <div class="card-summary">
-                            <div class="card-summary__area">
-                                <img src="./images-content/area-img.png" alt="logo of surface area">
-                                <div class="card-summary__text">40 M2</div>
-                            </div>
-                            <div class="card-summary__days">
-                                <img src="./images-content/days-img.png" alt="logo of timeline">
-                                <div class="card-summary__text">48 DAYS</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-card-wrapper">
-                        <div class="card client-section__card">
-                            <div class="card-header">
-                                <img class="card-header__pic" src="./images-content/client-img-2.png" alt="happy middle-aged man">
-                                <h4 class="card-header__heading">Afanasyev Sergey Alexandrovich</h4>
-                            </div>
-                            <p class="card-text">I want to thank the guys for their work. 
-                                We put your shower part in repair. 
-                                I am very grateful that I referred to 
-                                the repair as to my own. Great thanks 
-                                I express the project to Georgia for its 
-                                professionalism and approach.</p>
-                            <p class="card-text"> The repair 
-                                process was turned out in terms, faster 
-                                than anticipated. Team mobile and professional. 
-                                Works performed qualitatively without comments. 
-                                Quality satisfied. Prices democratic. 
-                                I recommend these masters.</p>
-                        </div>
-                        <div class="card-summary">
-                            <div class="card-summary__area">
-                                <img src="./images-content/area-img.png" alt="logo of surface area">
-                                <div class="card-summary__text">90 M2</div>
-                            </div>
-                            <div class="card-summary__days">
-                                <img src="./images-content/days-img.png" alt="logo of timeline">
-                                <div class="card-summary__text">128 DAYS</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single-card-wrapper">
-                        <div class="card client-section__card">
-                            <div class="card-header">
-                                <img class="card-header__pic" src="./images-content/client-img-3.png" alt="happy middle-aged man">
-                                <h4 class="card-header__heading">Kiriev Egor Leonidovich</h4>
-                            </div>
-                            <p class="card-text">I want to thank the guys for their work. 
-                                We put your shower part in repair. 
-                                I am very grateful that I referred to 
-                                the repair as to my own. Great thanks 
-                                I express the project to Georgia for its 
-                                professionalism and approach.</p>
-                            <p class="card-text"> The repair 
-                                process was turned out in terms, faster 
-                                than anticipated. Team mobile and professional. 
-                                Works performed qualitatively without comments. 
-                                Quality satisfied. Prices democratic. 
-                                I recommend these masters.</p>
-                        </div>
-                        <div class="card-summary">
-                            <div class="card-summary__area">
-                                <img src="./images-content/area-img.png" alt="logo of surface area">
-                                <div class="card-summary__text">56 M2</div>
-                            </div>
-                            <div class="card-summary__days">
-                                <img src="./images-content/days-img.png" alt="logo of timeline">
-                                <div class="card-summary__text">86 DAYS</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div>
+              <button class="next" onclick="slider1.next()"
+                ><img
+                  src="./images-interface/arrow-right.svg"
+                  alt=" next slide"
+              /></button>
             </div>
-            <div class="client-section__bg-container"></div>
-            <div class="client-section__bg-container-transform"></div>
-        </section>
-        <div class="feedback-form-wrapper">
-            <form class="feedback" action=" ">
-                <label class="form-label_feedback" for="request-form">Have any questions?</label>
-                    <div class="input-wrapper_short-1">
-                        <label class="label repair-subsection__label label_theme-black" for="fname">Name
-                            <input class="input repair-subsection__input input_theme-black" type="text" placeholder="Enter your name:">
-                        </label>
-                        <div class="input__line_feedback"></div>
-                    </div>
-                    <div class="input-wrapper_short-2">
-                        <label class="label repair-subsection__label label_theme-black" for="phone">Phone
-                            <input class="input repair-subsection__input input_theme-black" type="text" placeholder="Enter your phone number:">
-                        </label>
-                        <div class="input__line_feedback"></div>
-                    </div>
-                    <div class="input-wrapper_long">
-                        <label class="label repair-subsection__label label_theme-black" for="e-mail">Question
-                            <input class="input repair-subsection__input input_theme-black" type="text" placeholder="I want to know:">
-                        </label>
-                        <div class="input__line_feedback"></div>
-                    </div>
-                    <div class="check feedback__check">
-                        <label class="check__label">
-                            <input class="check__input" type="checkbox">
-                            <span class="check__box"></span>
-                            <span class="check__label  check__label_theme-black">I agree to the processing of personal data</span>
-                        </label>
-                    </div>
-                <button class="button form-button form-button_3">
-                    submit
-                </button>
-            </form>
+          </div>
+          <ul class="slideshow-captions">
+            <li>
+              <a
+                class="link title caption-text caption-text_active"
+                onclick="slider1.current(0)"
+                >Amherst Rd</a
+              >
+            </li>
+            <li>
+              <a class="link title caption-text" onclick="slider1.current(1)"
+                >Willow Ave</a
+              >
+            </li>
+            <li>
+              <a class="link title caption-text" onclick="slider1.current(2)"
+                >Creekwood Dr</a
+              >
+            </li>
+          </ul>
+          <div class="slideshow-container">
+              <button class="prev prev_mob" onclick="slider1.prev()"
+                ><img
+                  src="./images-interface/slideshow-prev.png"
+                  alt=" previous slide"
+              /></button>
+              <button class="next next_mob" onclick="slider1.next()"
+                ><img
+                  src="./images-interface/slideshow-next.png"
+                  alt=" next slide"
+              /></button>
+            <div class="slide">
+              <img
+                class="slideshow-image_1 fade"
+                src="./images-content/design-picture-1.png"
+                alt="living room interior, two chairs and journal table between them"
+              />
+              <img
+                class="slideshow-image_1_mob fade"
+                src="./images-content/design-picture-1-mob.png"
+                alt="bedroom, plasma TV on the wall, desk, bed, chair"
+              />
+            </div>
+            <div class="slide" style="display: none">
+              <img
+                class="slideshow-image_2 fade"
+                src="./images-content/design-picture-2.png"
+                alt="spacious living room with two large windows and L-shaped grey sofa"
+              />
+              <img
+                class="slideshow-image_1_mob fade"
+                src="./images-content/design-picture-1.png"
+                alt="spacious living room with two large windows and L-shaped grey sofa"
+              />
+            </div>
+            <div class="slide" style="display: none">
+              <img
+                class="slideshow-image_3 fade"
+                src="./images-content/design-picture-3.png"
+                alt="modern minimalistic bedroom interior"
+              />
+              <img
+                class="slideshow-image_1_mob fade"
+                src="./images-content/design-picture-2.png"
+                alt="modern minimalistic bedroom interior "
+              />
+            </div>
+          </div>
         </div>
-        <section class="location-section">
-            <div class="location-section__overlay"></div>
-            <div class="location-section__container">
-                <div class="address">Rostov-on-Don, Nansen St., 239 Shopping Center Decorum 
-                    Tel +7 (928) 768 32 29
-                </div>
-                    <div class="contacts">
-                        <a class="round-button" href="mailto:info@skillfactory.ru" role="button">
-                            <div class="round-button">
-                                <img src="./images-content/Group.svg" alt="click to send us e-mail">
-                            </div>
-                        </a>
-                        <a class="round-button" href="https://www.instagram.com" role="button">
-                            <div class="round-button">
-                                <img src="./images-content/icon-inst.svg" alt="click to visit our instagram">
-                            </div>
-                        </a>
-                    </div>
-                <div class="map"></div>
+      </section>
+      <section class="surveillance-section">
+        <div class="surveillance-section__heading-group">
+          <h3 class="heading-3 heading-3_theme-white">Live Updates</h3>
+          <div class="img-wrapper">
+            <img
+              src="./images-content/img-skewer.png"
+              role="presentation"
+              alt=""
+            />
+            <img
+              class="img-CCTV"
+              src="./images-content/online-control-camera.png"
+              role="presentation"
+              alt=""
+            />
+            <img
+              src="./images-content/img-skewer.png"
+              role="presentation"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="video-player">
+          <video
+            src="./images-content/video.mov"
+            poster="./images-content/video-poster.png"
+            class="video"
+            alt="empty spacious well-illuminated room with big windows"
+          ></video>
+          <div class="video-overlay"></div>
+          <button class="play-button" type="controls">
+            <img
+              class="play-button__icon"
+              src="./images-interface/video-button-polygon.svg"
+              alt="play"
+            />
+          </button>
+        </div>
+        <hr class="h-rule" aria-hidden="true" />
+        <p class="surveillance-section__text">
+          Experience transparency in action! For all our projects, we set up
+          live cameras providing round-the-clock streaming of the ongoing work.
+          You have the power to check the progress in your apartment anytime,
+          right from our website. Immerse yourself in a live feed from your
+          place! Ready to witness it yourself? Leave a request below and we'll
+          send you a direct link to the live broadcast.
+        </p>
+        <form class="request-form" onsubmit="handleSubmit(event)">
+          <fieldset class="input-group">
+            <label
+              class="label request-form__label_1 label_text"
+              for="request-form-name"
+              >Name
+              <input
+                id="request-form-name"
+                name="name"
+                class="input request-form__input"
+                type="text"
+                placeholder="Enter your name:"
+              />
+              <div class="input__line"></div>
+            </label>
+            <label
+              class="label request-form__label_2 label_text"
+              for="request-form-phone"
+              >Phone
+              <input
+                id="request-form-phone"
+                name="phone"
+                class="input request-form__input"
+                type="text"
+                placeholder="Enter your phone number:"
+              />
+              <div class="input__line"></div>
+            </label>
+            <div class="check check_1">
+              <label class="check__label label_theme-white">
+                <input class="check__input" type="checkbox" required />
+                <span class="check__box"></span>
+                <span class="check__label"
+                  >I consent to the use of my personal information
+                </span>
+              </label>
             </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="footer__container">
-            <div class="logo" role="presentation">IC "Repair Design Project"</div>
-            <nav>
-                <ul class="header-nav">
-                    <li class="header-nav__item"><a href="" class="link link_active">HOME</a></li>
-                    <li class="header-nav__item"><a href="#completed-projects" class="link">PROJECTS</a></li>
-                    <li class="header-nav__item"><a href="#request-measurement" class="link">MEASUREMENT</a></li>
-                    <li class="header-nav__item"><a href=" " class="link">TEAM</a></li>
-                    <li class="header-nav__item"><a href=" " class="link">REVIEWS</a></li>
-                    <li class="header-nav__item"><a href=" " class="link">CONTACTS</a></li>
+            <button class="button form-button form-button_1" type="submit">
+              submit
+            </button>
+          </fieldset>
+        </form>
+      </section>
+      <section class="repair-section">
+        <div class="repair-section__container">
+          <h3 class="heading-3 repair-section__heading">
+            types of home improvement
+          </h3>
+          <div class="img-wrapper">
+            <img
+              src="./images-content/img-skewer.png"
+              role="presentation"
+              alt=""
+            />
+            <img
+              class="img-repair-section"
+              src="./images-content/img-repair-types.svg"
+              role="presentation"
+              alt="logo of hammer being crossed over wrench"
+            />
+            <img
+              src="./images-content/img-skewer.png"
+              role="presentation"
+              alt=""
+            />
+          </div>
+          <div class="card-container repair-section__card-container">
+            <div class="card repair-section__card">
+              <div class="card-pic_wrapper">
+                <img
+                  class="card__pic"
+                  src="./images-content/card-pic-1.png"
+                  alt="empty freshly renovated living room with back wall painted in deep-blue and hardwood floors"
+                />
+              </div>
+              <div class="list-container">
+                <h4 class="card__heading">Basic Refurbishment</h4>
+                <ul class="card__list">
+                  <li class="card__item">Remove old finishes</li>
+                  <li class="card__item">Upgrade fire protection</li>
+                  <li class="card__item">Improve thermal performance</li>
+                  <li class="card__item">Patch up minor wall cracks</li>
+                  <li class="card__item">Upgrade plumbing</li>
+                  <li class="card__item">Replace outlets and switches</li>
+                  <li class="card__item">Replace door handles</li>
                 </ul>
-            </nav>
-            <a href="tel:+79287683239" class="contact-group__phone">+7 (928) 768-32-39</a>
-            <button class="button contact-group__button">REQUEST A CALL</button>
+                <div class="button card-summary_repair">200$ per sq ft</div>
+              </div>
             </div>
+            <div class="card repair-section__card">
+              <div class="card-pic_wrapper">
+                <img
+                  class="card__pic"
+                  src="./images-content/card-pic-2.png"
+                  alt="living room with a modern design interior"
+                />
+              </div>
+              <div class="list-container">
+                <h4 class="card__heading">Cosmetic Renovation</h4>
+                <ul class="card__list">
+                  <li class="card__item">Enhance living spaces</li>
+                  <li class="card__item">Install large windows</li>
+                  <li class="card__item">Swap out doors</li>
+                  <li class="card__item">Apply wallpapers</li>
+                  <li class="card__item">Replace radiators</li>
+                  <li class="card__item">Add warm lighting</li>
+                  <li class="card__item">Paint walls and ceilings</li>
+                </ul>
+                <div class="button card-summary_repair">
+                  300$ per sq ft
+                </div>
+              </div>
+            </div>
+            <div class="card repair-section__card">
+              <div class="card-pic_wrapper">
+                <img
+                  class="card__pic"
+                  src="./images-content/card-pic-3.png"
+                  alt="ikea style living room interior"
+                />
+              </div>
+              <div class="list-container">
+                <h4 class="card__heading">Designer Makeover</h4>
+                <ul class="card__list">
+                  <li class="card__item">Select customized furniture</li>
+                  <li class="card__item">Choose color scheme and paint</li>
+                  <li class="card__item">Integrate stylish decor</li>
+                  <li class="card__item">Enhance spatial layout and flow</li>
+                  <li class="card__item">Select unique fabric and textiles</li>
+                  <li class="card__item">Curate artwork and wall decor</li>
+                  <li class="card__item">Design lighting & fixtures</li>
+                </ul>
+                <div class="button card-summary_repair">
+                  400$ per sq ft
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="repair-subsection__container">
+            <ul class="benefits">
+              <li class="benefit__item">
+                <div class="item-nr">01</div>
+                <p>
+                  Our expert will come for measurements at your convenience,
+                  either on the same day or on a date that suits you
+                </p>
+              </li>
+              <li class="benefit__item">
+                <div class="item-nr">02</div>
+                <p>All measurements are provided at no cost</p>
+              </li>
+              <li class="benefit__item">
+                <div class="item-nr">03</div>
+                <p>Free of charge cost estimates</p>
+              </li>
+              <li class="benefit__item">
+                <div class="item-nr">04</div>
+                <p>
+                  Get a cost estimate and <br />
+                  the timeline of your upcoming renovation
+                </p>
+              </li>
+            </ul>
+            <div class="repair-form-wrapper">
+              <form
+                id="request-measurement"
+                class="request-form repair-subsection__form"
+                onsubmit="handleSubmit(event)"
+              >
+                <label class="form-label" for="repair-subsection__form"
+                  >Request a complimentary visit<br />
+                  by our measurement expert</label
+                >
+                <div class="input-wrapper">
+                  <label
+                    for="request-visit-form-name"
+                    class="label repair-subsection__label label_theme-black"
+                    >Name
+                    <input
+                      id="request-visit-form-name"
+                      name="name"
+                      class="input repair-subsection__input input_theme-black"
+                      type="text"
+                      placeholder="Enter your name:"
+                    />
+                  </label>
+                  <div class="input__line_feedback"></div>
+                </div>
+                <div class="input-wrapper">
+                  <label
+                    class="label repair-subsection__label label_theme-black"
+                    for="request-visit-form-phone"
+                    >Phone
+                    <input
+                      id="request-visit-form-phone"
+                      name="phone"
+                      class="input repair-subsection__input input_theme-black"
+                      type="tel"
+                      placeholder="Enter your phone number:"
+                    />
+                  </label>
+                  <div class="input__line_feedback"></div>
+                </div>
+                <div class="input-wrapper">
+                  <label
+                    class="label repair-subsection__label label_theme-black"
+                    for="e-mail"
+                    >E-mail
+                    <input
+                      id="request-visit-form-email"
+                      name="email"
+                      class="input repair-subsection__input input_theme-black"
+                      type="email"
+                      placeholder="Enter your e-mail:"
+                    />
+                  </label>
+                  <div class="input__line_feedback"></div>
+                </div>
+                <div class="check_2">
+                  <label class="check__label">
+                    <input class="check__input" type="checkbox" required />
+                    <span class="check__box"></span>
+                    <span class="check__label check__label_theme-black"
+                      >I consent to the use of my personal information</span
+                    >
+                  </label>
+                </div>
+                <button class="button form-button form-button_2" type="submit">
+                  request free measurement
+                </button>
+              </form>
+              <div class="cost-saver">
+                <div class="cost-saver__bgr"></div>
+                <p class="cost-saver__text">Save 10-20% on material costs</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
+      <section class="style-section">
+        <div class="style-section__overlay"></div>
+        <div class="style-section__container">
+          <h3 class="title style-section__heading">
+            Bringing your wildest dreams to life
+          </h3>
+          <div class="list-wrapper">
+            <ul class="style-list">
+              <li class="style-list__item" data-style="Armenian">
+                Armenian classic
+              </li>
+              <li class="style-list__item" data-style="Empire">Empire</li>
+              <li class="style-list__item" data-style="Loft">Loft</li>
+              <li class="style-list__item" data-style="Minimalism">
+                Minimalism
+              </li>
+              <li class="style-list__item" data-style="Provence">Provence</li>
+              <li class="style-list__item" data-style="Scandinavian">
+                Scandinavian
+              </li>
+            </ul>
+          </div>
+          <div class="slideshow-container__vertical">
+            <div class="inner-container__vertical">
+              <div class="masonry" data-style="Armenian">
+                <div class="masonry_half__1">
+                  <img
+                    class="masonry-item__big"
+                    src="./images-content/styles/armenian/masonry-1.png"
+                    alt="opulent living room with antique grandfather clock"
+                  />
+                  <img
+                    class="masonry-item__small"
+                    src="./images-content/styles/armenian/masonry-2.png"
+                    alt="living room interior with a plasma TV"
+                  />
+                </div>
+                <div class="masonry_half__2">
+                  <img
+                    class="masonry-item__small"
+                    src="./images-content/styles/armenian/masonry-3.png"
+                    alt="living room interior with sofa"
+                  />
+                  <img
+                    class="masonry-item__big"
+                    src="./images-content/styles/armenian/masonry-4.png"
+                    alt="living room interior with magazine table"
+                  />
+                </div>
+              </div>
+              <div class="masonry" data-style="Empire">
+                <div class="masonry_half__1">
+                  <img
+                    class="masonry-item__big"
+                    src="./images-content/styles/empire/masonry-1.png"
+                    alt="empire-style decorated living room 1"
+                  />
+                  <img
+                    class="masonry-item__small"
+                    src="./images-content/styles/empire/masonry-2.png"
+                    alt="empire-style decorated living room 2"
+                  />
+                </div>
+                <div class="masonry_half__2">
+                  <img
+                    class="masonry-item__small"
+                    src="./images-content/styles/empire/masonry-3.png"
+                    alt="empire-style decorated living room 3"
+                  />
+                  <img
+                    class="masonry-item__big"
+                    src="./images-content/styles/empire/masonry-4.png"
+                    alt="empire-style decorated living room 4"
+                  />
+                </div>
+              </div>
+              <div class="masonry" data-style="Loft">
+                <div class="masonry_half__1">
+                  <img
+                    class="masonry-item__big"
+                    src="./images-content/styles/loft/masonry-1.png"
+                    alt="loft-style decorated living room 1"
+                  />
+                  <img
+                    class="masonry-item__small"
+                    src="./images-content/styles/loft/masonry-2.png"
+                    alt="loft-style decorated living room 2"
+                  />
+                </div>
+                <div class="masonry_half__2">
+                  <img
+                    class="masonry-item__small"
+                    src="./images-content/styles/loft/masonry-3.png"
+                    alt="loft-style decorated living room 3"
+                  />
+                  <img
+                    class="masonry-item__big"
+                    src="./images-content/styles/loft/masonry-4.png"
+                    alt="loft-style decorated living room 4"
+                  />
+                </div>
+              </div>
+              <div class="masonry" data-style="Minimalism">
+                <div class="masonry_half__1">
+                  <img
+                    class="masonry-item__big"
+                    src="./images-content/styles/minimalism/masonry-1.png"
+                    alt="minimalism-style decorated room 1"
+                  />
+                  <img
+                    class="masonry-item__small"
+                    src="./images-content/styles/minimalism/masonry-2.png"
+                    alt="minimalism-style decorated room 2"
+                  />
+                </div>
+                <div class="masonry_half__2">
+                  <img
+                    class="masonry-item__small"
+                    src="./images-content/styles/minimalism/masonry-3.png"
+                    alt="minimalism-style decorated room 3"
+                  />
+                  <img
+                    class="masonry-item__big"
+                    src="./images-content/styles/minimalism/masonry-4.png"
+                    alt="minimalism-style decorated room 4"
+                  />
+                </div>
+              </div>
+              <div class="masonry" data-style="Provence">
+                <div class="masonry_half__1">
+                  <img
+                    class="masonry-item__big"
+                    src="./images-content/styles/provence/masonry-1.png"
+                    alt="provence-style decorated room 1"
+                  />
+                  <img
+                    class="masonry-item__small"
+                    src="./images-content/styles/provence/masonry-2.png"
+                    alt="provence-style decorated room 2"
+                  />
+                </div>
+                <div class="masonry_half__2">
+                  <img
+                    class="masonry-item__small"
+                    src="./images-content/styles/provence/masonry-3.png"
+                    alt="provence-style decorated room 3"
+                  />
+                  <img
+                    class="masonry-item__big"
+                    src="./images-content/styles/provence/masonry-4.png"
+                    alt="provence-style decorated room 4"
+                  />
+                </div>
+              </div>
+              <div class="masonry" data-style="Scandinavian">
+                <div class="masonry_half__1">
+                  <img
+                    class="masonry-item__big"
+                    src="./images-content/styles/scandinavian/masonry-1.png"
+                    alt="scandinavian-style decorated room 1"
+                  />
+                  <img
+                    class="masonry-item__small"
+                    src="./images-content/styles/scandinavian/masonry-2.png"
+                    alt="scandinavian-style decorated room 2"
+                  />
+                </div>
+                <div class="masonry_half__2">
+                  <img
+                    class="masonry-item__small"
+                    src="./images-content/styles/scandinavian/masonry-3.png"
+                    alt="scandinavian-style decorated room 3"
+                  />
+                  <img
+                    class="masonry-item__big"
+                    src="./images-content/styles/scandinavian/masonry-4.png"
+                    alt="scandinavian-style decorated room 4"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slideshow-container slideshow-container_mob">
+            <button class="prev prev_mob" onclick="slider2.prev()"
+              ><img
+                src="./images-interface/slideshow-prev.png"
+                alt=" previous picture"
+            /></button>
+            <button class="next next_mob" onclick="slider2.next()"
+              ><img
+                src="./images-interface/slideshow-next.png"
+                alt=" next picture"
+            /></button>
+            <div class="slide_2">
+              <img
+                class="slideshow-image_1_mob fade"
+                src="./images-content/style-sect-bgr.png"
+                alt="room interior"
+              />
+            </div>
+            <div class="slide_2" style="display: none">
+              <img
+                class="slideshow-image_1_mob fade"
+                src="./images-content/styles/loft/masonry-2.png"
+                alt="room interior"
+              />
+            </div>
+            <div class="slide_2" style="display: none">
+              <img
+                class="slideshow-image_1_mob fade"
+                src="./images-content/styles/loft/masonry-3.png"
+                alt="room interior"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="client-section" id="reviews">
+        <div class="client-section__container">
+          <div class="client-section__heading-group">
+            <h3 class="heading-3 client-section__heading">our clients</h3>
+            <div class="img-wrapper">
+              <img
+                src="./images-content/img-skewer.png"
+                alt="line"
+                aria-hidden="true"
+              />
+              <img
+                src="./images-content/client-section-img.png"
+                class="img-repair-section"
+                role="presentation"
+                alt=" CCTV camera icon"
+              />
+              <img
+                src="./images-content/img-skewer.png"
+                role="presentation"
+                alt=""
+              />
+            </div>
+            <p class="client-section__tagline">
+              80% of our clients refer us their friends and family
+            </p>
+          </div>
+          <div class="client-section__card-container">
+            <div class="card client-section__card">
+              <div class="card-header">
+                <img
+                  class="card-header__pic"
+                  src="./images-content/client-img-1.png"
+                  alt="middle-aged woman"
+                />
+                <h4 class="card-header__heading">Karen Hunt</h4>
+              </div>
+              <p class="card-text">
+                I am absolutely thrilled with the outstanding job done by this
+                company. From start to finish, their professionalism and
+                attention to detail were truly impressive. The team went above
+                and beyond to bring my vision to life, and the results exceeded
+                my expectations.
+              </p>
+              <p class="card-text">
+                Not only was the work completed on time, but the quality of
+                craftsmanship was top-notch. Every inch of my space was
+                transformed with precision and care. It's rare to find a company
+                that not only delivers on its promises but surpasses them. I can
+                confidently say that I've found my go-to for any future
+                remodeling needs.
+              </p>
+              <div class="card-summary">
+                <div class="card-summary__area">
+                  <img
+                    src="./images-content/area-img.png"
+                    role="presentation"
+                    alt=""
+                  />
+                  <div class="card-summary__text">40 sq ft</div>
+                </div>
+                <div class="card-summary__days">
+                  <img
+                    src="./images-content/days-img.png"
+                    role="presentation"
+                    alt=""
+                  />
+                  <div class="card-summary__text">48 DAYS</div>
+                </div>
+              </div>
+            </div>
+            <div class="card client-section__card">
+              <div class="card-header">
+                <img
+                  class="card-header__pic"
+                  src="./images-content/client-img-2.png"
+                  alt="middle-aged man"
+                />
+                <h4 class="card-header__heading">Rick Smalley</h4>
+              </div>
+              <p class="card-text">
+                I can't say enough about the incredible experience I had with
+                this company. The level of expertise and creativity they brought
+                to the project was remarkable. From suggesting innovative design
+                ideas to seamlessly executing the construction, they
+                demonstrated a deep understanding of their craft.
+              </p>
+              <p class="card-text">
+                It's evident that they take great pride in their work, and it
+                truly shows in the final product. I now have a space that not
+                only reflects my style but also enhances the functionality of my
+                home. I wholeheartedly recommend this company to anyone looking
+                for exceptional remodeling services.
+              </p>
+              <div class="card-summary">
+                <div class="card-summary__area">
+                  <img
+                    src="./images-content/area-img.png"
+                    role="presentation"
+                    alt=""
+                  />
+                  <div class="card-summary__text">90 sq ft</div>
+                </div>
+                <div class="card-summary__days">
+                  <img
+                    src="./images-content/days-img.png"
+                    role="presentation"
+                    alt=""
+                  />
+                  <div class="card-summary__text">128 DAYS</div>
+                </div>
+              </div>
+            </div>
+            <div class="card client-section__card">
+              <div class="card-header">
+                <img
+                  class="card-header__pic"
+                  src="./images-content/client-img-3.png"
+                  alt="middle-aged man"
+                />
+                <h4 class="card-header__heading">Carlos García</h4>
+              </div>
+              <p class="card-text">
+                I am thoroughly impressed with the level of professionalism and
+                expertise exhibited by this company. They took my vague ideas
+                and turned them into a stunning reality. The attention to detail
+                in every aspect of the project was truly commendable. What stood
+                out to me the most was their commitment to ensuring I was
+                completely satisfied with the final result.
+              </p>
+              <p class="card-text">
+                They listened attentively to my preferences and offered valuable
+                insights that elevated the overall design. The seamless
+                coordination among their team members was evident, and it made
+                the entire process a breeze. I now have a beautifully renovated
+                space that I am proud to show off to friends and family. Without
+                a doubt, this company is a cut above the rest.
+              </p>
+              <div class="card-summary">
+                <div class="card-summary__area">
+                  <img
+                    src="./images-content/area-img.png"
+                    alt="logo of surface area"
+                  />
+                  <div class="card-summary__text">56 sq ft</div>
+                </div>
+                <div class="card-summary__days">
+                  <img
+                    src="./images-content/days-img.png"
+                    role="presentation"
+                    alt=""
+                  />
+                  <div class="card-summary__text">86 DAYS</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="client-section__bg-container"></div>
+        <div class="client-section__bg-container-transform"></div>
+      </section>
+      <section class="feedback-section">
+        <form class="feedback" onsubmit="handleSubmit(event)" id="request-form">
+          <label class="form-label_feedback" for="request-form"
+            >Have any questions?</label
+          >
+          <div class="input-wrapper_short-1">
+            <label
+              class="label repair-subsection__label label_theme-black"
+              for="name"
+              >Name
+              <input
+                id="name"
+                name="name"
+                class="input repair-subsection__input input_theme-black"
+                type="text"
+                placeholder="Enter your name:"
+                required
+              />
+            </label>
+            <div class="input__line_feedback"></div>
+          </div>
+          <div class="input-wrapper_short-2">
+            <label
+              class="label repair-subsection__label label_theme-black"
+              for="phone"
+              >Phone
+              <input
+                id="phone"
+                name="phone"
+                class="input repair-subsection__input input_theme-black"
+                type="tel"
+                placeholder="Enter your phone number:"
+              />
+            </label>
+            <div class="input__line_feedback"></div>
+          </div>
+          <div class="input-wrapper_long">
+            <label
+              class="label repair-subsection__label label_theme-black"
+              for="question"
+              >Question
+              <input
+                id="question"
+                name="question"
+                class="input repair-subsection__input input_theme-black"
+                type="text"
+                placeholder="I would like to know:"
+              />
+            </label>
+            <div class="input__line_feedback"></div>
+          </div>
+          <div class="check feedback__check">
+            <label class="check__label">
+              <input class="check__input" type="checkbox" required />
+              <span class="check__box"></span>
+              <span class="check__label check__label_theme-black">
+                I consent to the use of my personal information
+              </span>
+            </label>
+          </div>
+          <button class="button form-button form-button_3" type="submit">
+            submit
+          </button>
+        </form>
+      </section>
+      <section class="location-section" id="contacts">
+        <div class="location-section__overlay"></div>
+        <div class="location-section__container">
+          <div class="address">
+            609 Phillips Ave, Knoxville, TN 37920
+            <br />Tel +1 (928) 374-65-00
+          </div>
+          <div class="contacts">
+            <a
+              class="round-button"
+              href="mailto:info@skillfactory.ru"
+              role="button"
+            >
+              <div class="round-button">
+                <img
+                  src="./images-content/Group.svg"
+                  alt="click to send us e-mail"
+                />
+              </div>
+            </a>
+            <a
+              class="round-button"
+              href="https://www.instagram.com"
+              role="button"
+            >
+              <div class="round-button">
+                <img
+                  src="./images-content/icon-inst.svg"
+                  alt="click to visit our instagram"
+                />
+              </div>
+            </a>
+          </div>
+          <img class="map" src="./images-content/map.png" alt="map" />
+        </div>
+      </section>
+    </main>
+    <footer class="header">
+      <div class="header__container">
+        <div class="logo" role="presentation">Remodelling and Desing</div>
+        <nav class="header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a href="" class="link">HOME</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#completed-projects" class="link">PROJECTS</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#request-measurement" class="link">MEASUREMENT</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#reviews" class="link">TEAM</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#reviews" class="link">REVIEWS</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#contacts" class="link">CONTACTS</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__right-side-wrapper">
+          <a href="tel:+1(928)374-65-00" class="contact-group__phone"
+            >+1 (928) 374-65-00</a
+          >
+          <button
+            class="button contact-group__button"
+            onclick="window.location.href='#request-measurement'"
+          >
+            SCHEDULE A CALL
+          </button>
+        </div>
+      </div>
     </footer>
     <script src="./js/script.js"></script>
-</body>
+  </body>
 </html>
