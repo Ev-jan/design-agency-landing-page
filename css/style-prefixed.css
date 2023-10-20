@@ -66,6 +66,7 @@ html {
 }
 
 .link {
+  all: unset;
   text-decoration: none;
   color: var(--white);
   font-family: var(--nunito);

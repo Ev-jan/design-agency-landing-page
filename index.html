@@ -26,7 +26,7 @@
         <nav class="header-nav">
           <ul class="header-nav__list">
             <li class="header-nav__item">
-              <a href="" class="link">HOME</a>
+              <a href="#home" class="link">HOME</a>
             </li>
             <li class="header-nav__item">
               <a href="#completed-projects" class="link">PROJECTS</a>
@@ -59,7 +59,7 @@
       </div>
     </header>
     <main>
-      <section class="head-group">
+      <section class="head-group" id="home">
         <div class="head-group__container container">
           <h1 class="title head-group__title">
             <span class="head-group__title-white"
@@ -137,20 +137,20 @@
           </div>
           <ul class="slideshow-captions">
             <li>
-              <a
+              <button
                 class="link title caption-text caption-text_active"
                 onclick="slider1.current(0)"
-                >Amherst Rd</a
+                >Amherst Rd</button
               >
             </li>
             <li>
-              <a class="link title caption-text" onclick="slider1.current(1)"
-                >Willow Ave</a
+              <button class="link title caption-text" onclick="slider1.current(1)"
+                >Willow Ave</button
               >
             </li>
             <li>
-              <a class="link title caption-text" onclick="slider1.current(2)"
-                >Creekwood Dr</a
+              <button class="link title caption-text" onclick="slider1.current(2)"
+                >Creekwood Dr</button
               >
             </li>
           </ul>
@@ -1007,6 +1007,6 @@
         </div>
       </div>
     </footer>
-    <script src="./js/script.js"></script>
+    <script defer src="./js/script.js"></script>
   </body>
 </html>
