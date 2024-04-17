@@ -563,10 +563,6 @@ html {
   margin: 0 auto;
 }
 
-/* .label {
-  display: block;
-} */
-
 .label:hover {
   transform: rotate(-0.07deg);
 }
